@@ -15,9 +15,13 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-  "permissions": [
-    "activeTab",
-    "contextMenus",
-    "http://localhost/"
-  ]
+  "permissions": ["activeTab", "contextMenus", "http://localhost/"],
+  "commands": {
+    "launch": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+p"
+      },
+      "description": "Launch into play-with-mpv"
+    }
+  }
 }
