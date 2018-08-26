@@ -40,6 +40,6 @@ chrome.commands.onCommand.addListener(function(command) {
     // the return variable should only have one entry
     var activeTab = tabs[0];
     var activeTabId = activeTab.id; // or do whatever you need
-    playUrl(tab.url);
+    playUrl(activeTab.url);
   });
 });
